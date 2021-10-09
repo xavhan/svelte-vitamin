@@ -1,0 +1,35 @@
+{
+  "name": "svelte-vitamin",
+  "version": "1.0.0",
+  "description": "",
+  "author": {
+    "name": "Xavier Haniquaut",
+    "url": "https://github.com/xavhan"
+  },
+  "contributors": [],
+  "homepage": "https://github.com/xavhan/svelte-vitamin",
+  "bugs": "https://github.com/xavhan/svelte-vitamin/issues",
+  "repository": "https://github.com/xavhan/svelte-vitamin",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "format": "prettier --loglevel warn --write \"**/*.{js,css,md}\"",
+    "posttest": "npm run format",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "husky": "^7.0.2",
+    "lint-staged": "^11.2.1",
+    "prettier": "^2.4.1"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
