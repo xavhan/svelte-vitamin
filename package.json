@@ -43,7 +43,6 @@
   "lint-staged": {
     "*.{js,css,md}": "prettier --write"
   },
-  "dependencies": {},
   "volta": {
     "node": "14.18.0",
     "npm": "8.0.0"
