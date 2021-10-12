@@ -7,5 +7,7 @@ export { default as Link } from './Link.svelte';
 export { default as Loader } from './Loader.svelte';
 export { default as Select } from './Select.svelte';
 export { default as Skeleton } from './Skeleton.svelte';
+export { default as Snackbar } from './Snackbar.svelte';
 export { default as Styles } from './Styles.svelte';
+export { default as Toast } from './Toast.svelte';
 // ...
