@@ -35,3 +35,5 @@ const _variant = (v) => (x) => [x, v].join('--');
 
 export const gen_variant = (comp, prop, vari) =>
   compose(() => vitamin(comp), _property(prop), _variant(vari))();
+
+export const random_id = () => Math.random().toString();
