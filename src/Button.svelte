@@ -1,9 +1,8 @@
 <script>
   import { classnames, gen_variant, vitamin } from './utils';
-  // vtmn variants
+
   export let size;
   export let variant;
-  // go through
   let className = '';
   export { className as class };
   export let disabled;

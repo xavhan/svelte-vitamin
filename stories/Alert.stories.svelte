@@ -22,6 +22,9 @@
 
 <Story name="slots">
   <Block>
+    <Alert>title</Alert>
+  </Block>
+  <Block>
     <Alert>
       <svelte:fragment slot="title">title</svelte:fragment>
     </Alert>

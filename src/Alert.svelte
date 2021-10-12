@@ -2,9 +2,7 @@
   import { classnames, gen_variant, vitamin } from "./utils";
 
   const ALERT = "alert";
-  // vtmn variants
   export let variant;
-  // go through
   let className = "";
   export { className as class };
 

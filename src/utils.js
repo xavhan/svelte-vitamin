@@ -1,5 +1,3 @@
-export const VITAMIN = 'vtmn';
-
 function toClassName(value) {
   let result = '';
 
@@ -27,7 +25,7 @@ export function classnames(...args) {
 
 export const pipe = (...ops) => ops.reduce((a, b) => (n) => a(b(n)));
 export const compose = (...ops) => ops.reduce((a, b) => (n) => b(a(n)));
-
+export const VITAMIN = 'vtmn';
 const namespace = (n) => (x) => [n, x].join('-');
 export const vitamin = namespace(VITAMIN);
 const _property = (p) => (x) => [x, p].join('_');

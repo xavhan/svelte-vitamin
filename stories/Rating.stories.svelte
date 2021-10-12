@@ -4,4 +4,7 @@
 
 <Meta title="Rating" />
 
-<Story name="todo">Todo</Story>
+<Story name="todo">
+  todo
+</Story>
+

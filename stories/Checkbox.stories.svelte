@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import {Checkbox} from 'svelte-vitamin'
+  import { Checkbox } from 'svelte-vitamin'
 
   let checkbox1 = false;
   let checkbox2 = true;

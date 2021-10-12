@@ -1,7 +1,7 @@
 <script>
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import { Block } from "./utils";
-  import { Link } from "svelte-vitamin";
+  import { Link } from 'svelte-vitamin';
 
   const sizes = ["small", "medium", "large"];
   const LINK =

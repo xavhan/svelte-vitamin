@@ -54,17 +54,3 @@ export default {
     clearScreen: false,
   },
 };
-Checkbox,
-  Loader,
-  Modal,
-  Popover,
-  Progressbar,
-  RadioButton,
-  Rating,
-  Select,
-  Skeleton,
-  Snackbar,
-  TextInput,
-  Toast,
-  Toggle,
-  Tooltip;
