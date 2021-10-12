@@ -15,8 +15,6 @@
   const ERROR = 'vtmn-select_error-text'
 </script>
 
-<div class={classes} ></div>
-
 <div class={CONTAINER}>
   {#if $$slots.label}
     <label for={id}>
