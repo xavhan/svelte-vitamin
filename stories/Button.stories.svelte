@@ -1,39 +1,40 @@
 <script>
-  import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import { Button } from 'svelte-vitamin';
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
+  import { Block } from "./utils";
+  import { Button } from "svelte-vitamin";
 
-  const sizes = ['small', 'medium', 'large'];
+  const sizes = ["small", "medium", "large"];
   const variants = [
-    'primary',
-    'primary-reversed',
-    'secondary',
-    'tertiary',
-    'conversion',
-    'ghost',
-    'ghost-reversed',
+    "primary",
+    "primary-reversed",
+    "secondary",
+    "tertiary",
+    "conversion",
+    "ghost",
+    "ghost-reversed"
   ];
 </script>
 
 <Meta title="Button" component={Button} />
 
 <Story name="sizes">
-  <div>
+  <Block>
     <Button>no size</Button>
-  </div>
+  </Block>
   {#each sizes as size}
-    <div>
+    <Block>
       <Button {size}>size='{size}'</Button>
-    </div>
+    </Block>
   {/each}
 </Story>
 
 <Story name="variants">
-  <div>
+  <Block>
     <Button>no variant</Button>
-  </div>
+  </Block>
   {#each variants as variant}
-    <div>
-      <Button color={variant}>color='{variant}'</Button>
-    </div>
+    <Block>
+      <Button {variant}>variant='{variant}'</Button>
+    </Block>
   {/each}
 </Story>

@@ -1,16 +1,16 @@
 <script>
-  import { classnames, variant, vitamin } from './utils';
+  import { classnames, gen_variant, vitamin } from './utils';
   // vtmn variants
   export let empty;
-  export let color;
+  export let variant;
   // go through
   let className = '';
   export { className as class };
 
   $: classes = classnames(
     vitamin('badge'),
-    color && variant('badge', 'variant', color),
-    empty && variant('badge', 'size', 'without-value'),
+    variant && gen_variant('badge', 'variant', variant),
+    empty && gen_variant('badge', 'size', 'without-value'),
     className
   );
 </script>

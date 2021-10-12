@@ -40,7 +40,9 @@
     "@storybook/addon-svelte-csf": "^1.1.0",
     "@storybook/svelte": "^6.3.10",
     "@tsconfig/svelte": "^2.0.1",
+    "@types/faker": "^5.5.8",
     "babel-loader": "^8.2.2",
+    "faker": "^5.5.3",
     "husky": "^7.0.2",
     "lint-staged": "^11.2.1",
     "prettier": "^2.4.1",
@@ -67,5 +69,7 @@
     "node": "14.18.0",
     "npm": "8.0.0"
   },
-  "browserslist": ["last 2 versions"]
+  "browserslist": [
+    "last 2 versions"
+  ]
 }

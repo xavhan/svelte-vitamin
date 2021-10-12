@@ -1,22 +1,23 @@
 <script>
-  import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import { Link } from 'svelte-vitamin';
+  import { Meta, Story } from "@storybook/addon-svelte-csf";
+  import { Block } from "./utils";
+  import { Link } from "svelte-vitamin";
 
-  const sizes = ['small', 'medium', 'large'];
+  const sizes = ["small", "medium", "large"];
   const LINK =
-    'https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-link--overview';
+    "https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-link--overview";
 </script>
 
 <Meta title="Link" component={Link} />
 
 <Story name="sizes">
-  <div>
+  <Block>
     <Link href={LINK}>no size</Link>
-  </div>
+  </Block>
   {#each sizes as size}
-    <div>
+    <Block>
       <Link {size} href={LINK}>size='{size}'</Link>
-    </div>
+    </Block>
   {/each}
 </Story>
 

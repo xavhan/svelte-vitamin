@@ -1,8 +1,8 @@
 <script>
-  import { classnames, variant, vitamin } from './utils';
+  import { classnames, gen_variant, vitamin } from './utils';
   // vtmn variants
   export let size;
-  export let color;
+  export let variant;
   // go through
   let className = '';
   export { className as class };
@@ -11,8 +11,8 @@
   $: ariaLabel = $$props['aria-label'];
   $: classes = classnames(
     vitamin('btn'),
-    color && variant('btn', 'variant', color),
-    size && variant('btn', 'size', size),
+    variant && gen_variant('btn', 'variant', variant),
+    size && gen_variant('btn', 'size', size),
     className
   );
 </script>

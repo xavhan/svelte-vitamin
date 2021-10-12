@@ -33,5 +33,5 @@ export const vitamin = namespace(VITAMIN);
 const _property = (p) => (x) => [x, p].join('_');
 const _variant = (v) => (x) => [x, v].join('--');
 
-export const variant = (comp, prop, vari) =>
+export const gen_variant = (comp, prop, vari) =>
   compose(() => vitamin(comp), _property(prop), _variant(vari))();

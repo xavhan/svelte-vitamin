@@ -1,5 +1,5 @@
 <script>
-  import { classnames, variant, vitamin } from './utils';
+  import { classnames, gen_variant, vitamin } from './utils';
   // vtmn variants
   export let size;
   export let standalone;
@@ -10,9 +10,9 @@
 
   $: classes = classnames(
     vitamin('link'),
-    size && variant('link', 'size', size),
-    standalone && [vitamin('link'), 'standalone'].join('--'),
-    external && [vitamin('link'), 'icon-along'].join('--'),
+    size && gen_variant('link', 'size', size),
+    standalone && [vitamin('link'), 'standalone'].join('--'), // TODO: refactor that in utils
+    external && [vitamin('link'), 'icon-along'].join('--'), // TODO: refactor that in utils
     className
   );
 </script>
