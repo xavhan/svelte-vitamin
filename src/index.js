@@ -10,4 +10,5 @@ export { default as Skeleton } from './Skeleton.svelte';
 export { default as Snackbar } from './Snackbar.svelte';
 export { default as Styles } from './Styles.svelte';
 export { default as Toast } from './Toast.svelte';
+export { default as Toggle } from './Toggle.svelte';
 // ...

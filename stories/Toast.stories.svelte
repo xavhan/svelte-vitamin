@@ -2,7 +2,7 @@
   import { Meta, Story } from "@storybook/addon-svelte-csf";
   import faker  from "faker"
   import { Block } from "./utils";
-  import { Toast, Button } from "svelte-vitamin";
+  import { Toast } from "svelte-vitamin";
 </script>
 
 <Meta title="Toast" component={Toast} />
