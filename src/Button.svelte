@@ -1,5 +1,5 @@
 <script>
-  import {classnames, variant, vitamin} from './utils';
+  import { classnames, variant, vitamin } from './utils';
   // vtmn variants
   export let size;
   export let color;
@@ -13,11 +13,12 @@
     vitamin('btn'),
     color && variant('btn', 'variant', color),
     size && variant('btn', 'size', size),
-    className,
+    className
   );
 </script>
 
-<button on:click
+<button
+  on:click
   {...$$restProps}
   class={classes}
   {disabled}
@@ -25,4 +26,3 @@
 >
   <slot />
 </button>
-

@@ -1,11 +1,8 @@
 <script>
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import {Button} from "../src";
-  const sizes = [
-    'small',
-    'medium',
-    'large',
-  ]
+  import { Button } from 'svelte-vitamin';
+
+  const sizes = ['small', 'medium', 'large'];
   const variants = [
     'primary',
     'primary-reversed',
@@ -13,8 +10,8 @@
     'tertiary',
     'conversion',
     'ghost',
-    'ghost-reversed'
-  ]
+    'ghost-reversed',
+  ];
 </script>
 
 <Meta title="Button" component={Button} />
@@ -25,7 +22,7 @@
   </div>
   {#each sizes as size}
     <div>
-      <Button size={size}>size='{size}'</Button>
+      <Button {size}>size='{size}'</Button>
     </div>
   {/each}
 </Story>
@@ -40,4 +37,3 @@
     </div>
   {/each}
 </Story>
-

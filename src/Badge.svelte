@@ -1,5 +1,5 @@
 <script>
-  import {classnames, variant, vitamin} from './utils';
+  import { classnames, variant, vitamin } from './utils';
   // vtmn variants
   export let empty;
   export let color;
@@ -11,14 +11,10 @@
     vitamin('badge'),
     color && variant('badge', 'variant', color),
     empty && variant('badge', 'size', 'without-value'),
-    className,
+    className
   );
 </script>
 
-<span
-  {...$$restProps}
-  class={classes}
->
+<span {...$$restProps} class={classes}>
   <slot />
 </span>
-

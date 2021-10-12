@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "include": ["src"],
+  "exclude": ["node_modules/*"],
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "svelte-vitamin": ["src/index"]
+    }
+  }
+}

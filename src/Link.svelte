@@ -1,5 +1,5 @@
 <script>
-  import {classnames, variant, vitamin} from './utils';
+  import { classnames, variant, vitamin } from './utils';
   // vtmn variants
   export let size;
   export let standalone;
@@ -11,17 +11,12 @@
   $: classes = classnames(
     vitamin('link'),
     size && variant('link', 'size', size),
-    standalone && [vitamin('link'),'standalone'].join('--'),
-    external && [vitamin('link'),'icon-along'].join('--'),
-    className,
+    standalone && [vitamin('link'), 'standalone'].join('--'),
+    external && [vitamin('link'), 'icon-along'].join('--'),
+    className
   );
 </script>
 
-<a
-  {...$$restProps}
-  class={classes}
-  href={$$props.href}
->
+<a {...$$restProps} class={classes} href={$$props.href}>
   <slot />
 </a>
-

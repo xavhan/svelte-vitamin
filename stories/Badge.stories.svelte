@@ -1,12 +1,7 @@
-<script>
+<script lang="ts">
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import {Badge} from "../src";
-  const variants = [
-    'default',
-    'brand',
-    'reversed',
-    'accent',
-  ]
+  import { Badge } from 'svelte-vitamin';
+  const variants = ['default', 'brand', 'reversed', 'accent'];
 </script>
 
 <Meta title="Badge" component={Badge} />
@@ -24,10 +19,9 @@
 
 <Story name="without content">
   <div>
-    <Badge empty/>
+    <Badge empty />
   </div>
   <div>
     <Badge>⬅️ with empty binding</Badge>
   </div>
 </Story>
-
