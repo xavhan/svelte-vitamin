@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import { Block } from "./utils";
-  import { Toggle } from "svelte-vitamin";
+  import { Block } from './utils';
+  import { Toggle } from 'svelte-vitamin';
 
   let toggle1 = false;
   let toggle2 = true;
@@ -25,7 +25,7 @@
     <Toggle bind:checked={toggle4} disabled>toggle4 label</Toggle>
   </Block>
 
-  <hr>
+  <hr />
 
   <pre>
   States of toggles checked prop:

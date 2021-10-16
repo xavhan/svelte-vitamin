@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import faker  from "faker"
-  import { Block } from "./utils";
-  import { Snackbar, Button } from "svelte-vitamin";
+  import { Meta, Story } from '@storybook/addon-svelte-csf';
+  import faker from 'faker';
+  import { Block } from './utils';
+  import { Snackbar, Button } from 'svelte-vitamin';
 </script>
 
 <Meta title="Snackbar" component={Snackbar} />

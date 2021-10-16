@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import { Block } from "./utils";
-  import { Badge } from "svelte-vitamin";
+  import { Meta, Story } from '@storybook/addon-svelte-csf';
+  import { Block } from './utils';
+  import { Badge } from 'svelte-vitamin';
 
-  const variants = ["default", "brand", "reversed", "accent"];
+  const variants = ['default', 'brand', 'reversed', 'accent'];
 </script>
 
 <Meta title="Badge" component={Badge} />

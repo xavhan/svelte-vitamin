@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import {Skeleton} from 'svelte-vitamin'
+  import { Skeleton } from 'svelte-vitamin';
 
   let percent = '66';
 </script>
@@ -10,20 +10,20 @@
 <Story name="overview">
   <div class="card">
     <div class="card-figure">
-      <Skeleton type="block"/>
+      <Skeleton type="block" />
     </div>
     <div class="card-content">
-      <Skeleton type="avatar"/>
-      <Skeleton/>
-      <br>
-      <Skeleton percent="75"/>
-      <Skeleton percent="50"/>
-      <br>
-      <Skeleton percent="25"/>
-      <Skeleton percent="25"/>
-      <Skeleton percent="25"/>
-      <br>
-      <Skeleton percent={percent}/>
+      <Skeleton type="avatar" />
+      <Skeleton />
+      <br />
+      <Skeleton percent="75" />
+      <Skeleton percent="50" />
+      <br />
+      <Skeleton percent="25" />
+      <Skeleton percent="25" />
+      <Skeleton percent="25" />
+      <br />
+      <Skeleton {percent} />
     </div>
   </div>
 </Story>

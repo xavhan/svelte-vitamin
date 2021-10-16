@@ -1,17 +1,17 @@
 <script>
-  import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import { Block } from "./utils";
-  import { Button } from "svelte-vitamin";
+  import { Meta, Story } from '@storybook/addon-svelte-csf';
+  import { Block } from './utils';
+  import { Button } from 'svelte-vitamin';
 
-  const sizes = ["small", "medium", "large"];
+  const sizes = ['small', 'medium', 'large'];
   const variants = [
-    "primary",
-    "primary-reversed",
-    "secondary",
-    "tertiary",
-    "conversion",
-    "ghost",
-    "ghost-reversed"
+    'primary',
+    'primary-reversed',
+    'secondary',
+    'tertiary',
+    'conversion',
+    'ghost',
+    'ghost-reversed',
   ];
 </script>
 

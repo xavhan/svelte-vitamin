@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { Meta, Story } from "@storybook/addon-svelte-csf";
-  import faker  from "faker"
-  import { Block } from "./utils";
-  import { Alert } from "svelte-vitamin";
+  import { Meta, Story } from '@storybook/addon-svelte-csf';
+  import faker from 'faker';
+  import { Block } from './utils';
+  import { Alert } from 'svelte-vitamin';
 
-  const variants = ['info','success', 'warning', 'danger'];
+  const variants = ['info', 'success', 'warning', 'danger'];
 </script>
 
 <Meta title="Alert" component={Alert} />
@@ -37,7 +37,9 @@
   </Block><Block>
     <Alert>
       <svelte:fragment slot="title">title</svelte:fragment>
-      <svelte:fragment slot="description">{faker.lorem.paragraph()}</svelte:fragment>
+      <svelte:fragment slot="description"
+        >{faker.lorem.paragraph()}</svelte:fragment
+      >
     </Alert>
   </Block>
   <Block>

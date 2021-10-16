@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import { Checkbox } from 'svelte-vitamin'
+  import { Checkbox } from 'svelte-vitamin';
 
   let checkbox1 = false;
   let checkbox2 = true;
@@ -10,7 +10,7 @@
   let checkbox6 = false;
 </script>
 
-<Meta title="Checkbox" component="{Checkbox}" />
+<Meta title="Checkbox" component={Checkbox} />
 
 <Story name="states">
   <Checkbox bind:checked={checkbox1}>text of label</Checkbox>
@@ -18,9 +18,11 @@
   <Checkbox bind:checked={checkbox3} disabled>disabled</Checkbox>
   <Checkbox bind:checked={checkbox4} disabled>disabled</Checkbox>
   <Checkbox bind:checked={checkbox5} indeterminate>indeterminate</Checkbox>
-  <Checkbox bind:checked={checkbox6} indeterminate disabled>indeterminate</Checkbox>
+  <Checkbox bind:checked={checkbox6} indeterminate disabled
+    >indeterminate</Checkbox
+  >
 
-  <hr>
+  <hr />
 
   <pre>
   States of checkboxes checked prop:

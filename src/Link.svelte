@@ -1,4 +1,5 @@
-<script>
+<script lang="ts">
+  // https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/components/link/src/index.css
   import { classnames, gen_variant, vitamin } from './utils';
 
   export let size;

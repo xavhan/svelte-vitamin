@@ -1,4 +1,4 @@
-function toClassName(value) {
+function toClassName(value: unknown): string {
   let result = '';
 
   if (typeof value === 'string' || typeof value === 'number') {
@@ -19,19 +19,17 @@ function toClassName(value) {
   return result;
 }
 
-export function classnames(...args) {
+export function classnames(...args: unknown[]): string {
   return args.map(toClassName).filter(Boolean).join(' ');
 }
 
 export const pipe = (...ops) => ops.reduce((a, b) => (n) => a(b(n)));
 export const compose = (...ops) => ops.reduce((a, b) => (n) => b(a(n)));
 export const VITAMIN = 'vtmn';
-const namespace = (n) => (x) => [n, x].join('-');
+const namespace = (n:string) => (x:string):string => [n, x].join('-');
 export const vitamin = namespace(VITAMIN);
-const _property = (p) => (x) => [x, p].join('_');
-const _variant = (v) => (x) => [x, v].join('--');
-
-export const gen_variant = (comp, prop, vari) =>
+const _property = (p:string) => (x:string):string => [x, p].join('_');
+const _variant = (v:string) => (x:string):string => [x, v].join('--');
+export const gen_variant = (comp:string, prop:string, vari:string):string =>
   compose(() => vitamin(comp), _property(prop), _variant(vari))();
-
-export const random_id = () => Math.random().toString();
+export const random_id = ():string => Math.random().toString();

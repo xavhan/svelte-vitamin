@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
+  // https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/components/badge/src/index.css
   import { classnames, gen_variant, vitamin } from './utils';
 
-  export let empty;
-  export let variant;
+  export let empty: boolean;
+  export let variant: 'default' | 'brand' | 'reversed' | 'accent';
   let className = '';
   export { className as class };
 
