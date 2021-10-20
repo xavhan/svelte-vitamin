@@ -5,7 +5,7 @@
   "jsnext:main": "dist/svelte-vitamin.es.js",
   "svelte": "src/index.js",
   "types": "src/index.d.ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "author": {
     "name": "Xavier Haniquaut",
