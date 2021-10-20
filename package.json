@@ -5,7 +5,7 @@
   "jsnext:main": "dist/svelte-vitamin.es.js",
   "svelte": "src/index.js",
   "types": "src/index.d.ts",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "author": {
     "name": "Xavier Haniquaut",
@@ -17,6 +17,7 @@
   "repository": "https://github.com/xavhan/svelte-vitamin",
   "license": "MIT",
   "files": [
+    "dist",
     "index.js"
   ],
   "scripts": {
