@@ -1,4 +1,5 @@
 <script lang="ts">
+  import '@vtmn/css-toast'
   // https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/components/toast/src/index.css
   import { classnames, vitamin } from './utils';
 

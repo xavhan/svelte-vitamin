@@ -74,5 +74,19 @@
   },
   "browserslist": [
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "@vtmn/css-alert": "^0.2.8",
+    "@vtmn/css-badge": "^0.3.19",
+    "@vtmn/css-button": "^0.6.10",
+    "@vtmn/css-checkbox": "^0.4.19",
+    "@vtmn/css-link": "^0.4.2",
+    "@vtmn/css-loader": "^0.1.17",
+    "@vtmn/css-select": "^0.2.15",
+    "@vtmn/css-skeleton": "^0.1.8",
+    "@vtmn/css-snackbar": "^0.2.9",
+    "@vtmn/css-text-input": "^0.8.12",
+    "@vtmn/css-toast": "^0.2.8",
+    "@vtmn/css-toggle": "^0.3.19"
+  }
 }
