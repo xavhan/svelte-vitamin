@@ -4,6 +4,7 @@ import analyze from 'rollup-plugin-analyzer';
 import autoPreprocess from 'svelte-preprocess';
 import bundleSize from 'rollup-plugin-bundle-size';
 import svelte from 'rollup-plugin-svelte';
+import css from 'rollup-plugin-import-css';
 import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
@@ -43,6 +44,7 @@ export default {
       }),
       emitCss: false,
     }),
+    css(),
     resolve(),
     commonjs(),
     typescript(),

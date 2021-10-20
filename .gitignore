@@ -7,3 +7,7 @@ Thumbs.db
 *.sublime-workspace
 *.log
 coverage
+dist
+index.js
+index.css
+index.js.map
