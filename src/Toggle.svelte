@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '@vtmn/css-toggle'
+  import '@vtmn/css-toggle';
   // https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/components/toggle/src/index.css
   import { classnames, vitamin, random_id } from './utils';
 

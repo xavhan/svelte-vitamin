@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '@vtmn/css-select'
+  import '@vtmn/css-select';
   // https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/components/select/src/index.css
   import { classnames, random_id } from './utils';
 

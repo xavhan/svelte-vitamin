@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '@vtmn/css-alert'
+  import '@vtmn/css-alert';
   // https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/components/alert/src/index.css
   import { classnames, gen_variant, vitamin } from './utils';
 

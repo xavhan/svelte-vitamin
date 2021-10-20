@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '@vtmn/css-text-input'
+  import '@vtmn/css-text-input';
   // https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/components/text-input/src/index.css
   import { classnames, random_id, vitamin } from './utils';
 
