@@ -1,6 +1,6 @@
 {
   "name": "svelte-vitamin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "description": "All inclusive Svelte wrapper for Decathlon Vitamin components",
   "author": {
