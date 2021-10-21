@@ -26,10 +26,19 @@ export function classnames(...args: unknown[]): string {
 export const pipe = (...ops) => ops.reduce((a, b) => (n) => a(b(n)));
 export const compose = (...ops) => ops.reduce((a, b) => (n) => b(a(n)));
 export const VITAMIN = 'vtmn';
-const namespace = (n:string) => (x:string):string => [n, x].join('-');
+const namespace =
+  (n: string) =>
+  (x: string): string =>
+    [n, x].join('-');
 export const vitamin = namespace(VITAMIN);
-const _property = (p:string) => (x:string):string => [x, p].join('_');
-const _variant = (v:string) => (x:string):string => [x, v].join('--');
-export const gen_variant = (comp:string, prop:string, vari:string):string =>
+const _property =
+  (p: string) =>
+  (x: string): string =>
+    [x, p].join('_');
+const _variant =
+  (v: string) =>
+  (x: string): string =>
+    [x, v].join('--');
+export const gen_variant = (comp: string, prop: string, vari: string): string =>
   compose(() => vitamin(comp), _property(prop), _variant(vari))();
-export const random_id = ():string => Math.random().toString();
+export const random_id = (): string => Math.random().toString();

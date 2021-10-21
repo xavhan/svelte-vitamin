@@ -1,7 +1,8 @@
-// install the lib first
-const preprocess = require('svelte-preprocess');
+import preprocess from 'svelte-preprocess';
 
-module.exports = {
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
   preprocess: preprocess(),
-  // ...other svelte options
 };
+
+export default config;

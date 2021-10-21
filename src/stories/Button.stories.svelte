@@ -1,7 +1,7 @@
 <script>
   import { Meta, Story } from '@storybook/addon-svelte-csf';
   import { Block } from './utils';
-  import { Button } from 'svelte-vitamin';
+  import { Button } from './../lib';
 
   const sizes = ['small', 'medium', 'large'];
   const variants = [
