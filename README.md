@@ -30,7 +30,7 @@ Install
 npm install --save svelte-vitamin
 ```
 
-and use it like that
+and use it like that ([see by yourself](https://codesandbox.io/s/rough-silence-lf8i3?file=/App.svelte))
 
 ```sveltehtml
 <script>
@@ -72,6 +72,8 @@ npm version <patch|minor|major>
 # bundle everything using svelte kit package command
 # https://kit.svelte.dev/docs#packaging
 npx svelte-kit package
+git push
 # Publish to NPM
 npm publish ./package
+# And do not forget to publish the release on github
 ```
