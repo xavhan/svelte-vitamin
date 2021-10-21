@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import { TextInput } from 'svelte-vitamin';
+  import { TextInput } from './../lib';
 
   let input_value = 'test';
 </script>

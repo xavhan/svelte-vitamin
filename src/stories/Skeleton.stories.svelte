@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import { Skeleton } from 'svelte-vitamin';
+  import { Skeleton } from './../lib';
 
   let percent = '66';
 </script>

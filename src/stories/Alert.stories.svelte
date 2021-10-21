@@ -2,7 +2,7 @@
   import { Meta, Story } from '@storybook/addon-svelte-csf';
   import faker from 'faker';
   import { Block } from './utils';
-  import { Alert } from 'svelte-vitamin';
+  import { Alert } from './../lib';
 
   const variants = ['info', 'success', 'warning', 'danger'];
 </script>

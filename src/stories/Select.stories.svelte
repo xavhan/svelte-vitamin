@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import { Select } from 'svelte-vitamin';
+  import { Select } from './../lib';
 
   let selectedValue1 = 'value1';
   let selectedValue2 = 'value1';

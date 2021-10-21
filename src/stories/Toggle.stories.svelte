@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Meta, Story } from '@storybook/addon-svelte-csf';
   import { Block } from './utils';
-  import { Toggle } from 'svelte-vitamin';
+  import { Toggle } from './../lib';
 
   let toggle1 = false;
   let toggle2 = true;
